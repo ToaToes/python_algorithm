@@ -1,7 +1,7 @@
 # python_algorithm
 learn python basics and to solve leetcode
 
-1. mapping in python:
+## 1. mapping in python:
 ```
 translation = {
 
