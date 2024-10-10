@@ -26,3 +26,8 @@ translated_string = original_string.translate(translation_table)
 print(translated_string)  # Output: "123de"
 
 ```
+
+## How to slice a string
+str[:5]: This will return the first five characters.
+str[5:]: This will return the string starting from the sixth character to the end.
+str[1:5]: This will return the characters from index 1 to index 4 (not including index 5).
