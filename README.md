@@ -31,3 +31,6 @@ print(translated_string)  # Output: "123de"
 str[:5]: This will return the first five characters. </br>
 str[5:]: This will return the string starting from the sixth character to the end. </br>
 str[1:5]: This will return the characters from index 1 to index 4 (not including index 5). </br>
+
+arr[-1] is a way to access the last element of a list (or any sequence, such as a string or tuple). </br>
+The negative indexing allows you to count from the end of the list, where -1 represents the last item, -2 represents the second-to-last item
