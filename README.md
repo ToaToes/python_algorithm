@@ -235,3 +235,17 @@ class Solution:
         return res
 ```
 
+______
+
+## To check a length of an Integer: first covert to string
+
+```
+# Define an integer
+number = 12345
+
+# Convert to string and use len()
+length = len(str(number))
+
+print("Number of digits:", length)  # Output: Number of digits: 5
+
+```
