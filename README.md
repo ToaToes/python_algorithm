@@ -86,4 +86,64 @@ print("Stack after popping:", list(stack))    # Output: [1, 2]
 
 _____
 
+# To use a Hash to eliminate the duplicates
+
+In Python, when you use a dictionary (hash = {}), it functions as a hash table where keys are unique. Each key can only appear once in the dictionary. If you try to add a duplicate key, the new value will overwrite the existing one.
+
+```
+hash_table = {}
+
+for i in nums:
+  hash_table[i] = i
+//OR
+# Adding unique elements
+hash_table['apple'] = 5
+hash_table['banana'] = 2
+
+# Attempting to add a duplicate key
+hash_table['apple'] = 10  # This will update the value for 'apple'
+
+print(hash_table)  # Output: {'apple': 10, 'banana': 2}
+```
+To store counts of items
+```
+# List of items
+items = ['apple', 'banana', 'orange', 'banana']
+
+# Dictionary to store counts
+hashlist = {}
+
+for item in items:
+    if item in hashlist:
+        hashlist[item] += 1  # Increment count if item exists
+    else:
+        hashlist[item] = 1    # Initialize count for new item
+
+print(hashlist)  # Output: {'apple': 1, 'banana': 2, 'orange': 1}
+
+```
+
+```
+# List with potential duplicates
+items = ['apple', 'banana', 'orange', 'banana']
+
+# Using a set for unique items
+hashlist = set(items)
+
+print(hashlist)  # Output: {'apple', 'banana', 'orange'}
+
+```
+
+To delete or get the value:
+```
+del my_hashmap['banana']  # Remove key 'banana'
+
+# Alternatively, using pop() to remove and return the value
+orange_count = my_hashmap.pop('orange')  # Removes 'orange' and returns its value
+
+```
+
+______
+
+
 
