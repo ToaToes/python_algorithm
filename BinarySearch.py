@@ -26,6 +26,10 @@ Use a binary search to solve, have one or two pivot to track
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
 
+        # To sovle case like: [1], target: 1
+        if target in nums:
+            return nums.index(target)
+     
         left = 0
         right = len(nums)-1
 
