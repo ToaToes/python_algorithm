@@ -304,3 +304,16 @@ class Solution:
 
         return res
 ```
+
+______
+## 9. DP Table
+
+A DP table (Dynamic Programming table) in Python is a data structure used to store intermediate results of subproblems in dynamic programming algorithms. This approach helps to avoid redundant calculations by storing results of subproblems, allowing for efficient computation of larger problems.
+
+Key Concepts
+Dynamic Programming: It’s an optimization technique used to solve complex problems by breaking them down into simpler overlapping subproblems. The results of these subproblems are stored (usually in a table) so they can be reused.
+
+DP Table: Typically a 2D list (or array) in Python, where:
+
+Rows represent one dimension of the problem.
+Columns represent another dimension of the problem.
