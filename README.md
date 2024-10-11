@@ -84,4 +84,6 @@ print("Stack after popping:", list(stack))    # Output: [1, 2]
 
 ```
 
+_____
+
 
