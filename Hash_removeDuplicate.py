@@ -28,3 +28,28 @@ keys = hash_table.keys()
 # Convert to list if needed
 keys_list = list(keys)
 '''
+
+
+
+'''
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
+The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+
+Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+Return k.
+
+
+Same way to solve as above
+'''
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        hash_table = {}
+
+        for i in range(len(nums)):
+            if nums[i] != val:
+                hash_table[i] = nums[i]
+
+        nums = list(hash_table.values())
+
+        return len(nums)
