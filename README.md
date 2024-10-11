@@ -183,7 +183,8 @@ Dumb way:
 ```
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        
+
+        # trace with two pivots
         left = right = len(s)-1
         while left >= 0:
             if s[right] == ' ':
@@ -195,6 +196,7 @@ class Solution:
                 else:
                     return right - left
 
+                #when left pivot reach the very begining of the s, done
                 if left == -1:
                     return right - left
 ```
