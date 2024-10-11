@@ -159,6 +159,7 @@ ______
 
 The strip() method removes any leading and trailing whitespace characters from the string s. This includes spaces, tabs, and newline characters.
 For example, if s is " Hello World! ", then s.strip() will return "Hello World!".
+
 **split():**
 
 The split() method splits the string into a list of words based on whitespace by default (spaces, tabs, etc.).
