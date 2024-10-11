@@ -27,7 +27,7 @@ print(translated_string)  # Output: "123de"
 
 ```
 
-## How to slice a string
+## 2. How to slice a string
 str[:5]: This will return the first five characters. </br>
 str[5:]: This will return the string starting from the sixth character to the end. </br>
 str[1:5]: This will return the characters from index 1 to index 4 (not including index 5). </br>
@@ -37,7 +37,7 @@ The negative indexing allows you to count from the end of the list, where -1 rep
 
 ______
 
-## How to use STACK
+## 3. How to use STACK
 
 In Python, a stack can be implemented using a list or the collections.deque class, which provides an efficient way to append and pop items from either end. 
 
