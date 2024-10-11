@@ -29,7 +29,7 @@ print(translated_string)  # Output: "123de"
 
 ## 2. How to slice a string
 str[:5]: This will return the first five characters. </br>
-[0], [1], [2], [3], [4]
+[0], [1], [2], [3], [4] </br>
 str[5:]: This will return the string starting from the sixth character to the end. </br>
 str[1:5]: This will return the characters from index 1 to index 4 (not including index 5). </br>
 
