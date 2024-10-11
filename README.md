@@ -249,3 +249,58 @@ length = len(str(number))
 print("Number of digits:", length)  # Output: Number of digits: 5
 
 ```
+
+_____
+
+## Conversion between Binary AND Integer
+
+```
+# Convert Int to Binary
+# Define a binary string
+binary_string = '1011'
+
+# Convert binary string to integer
+integer_value = int(binary_string, 2)
+
+print("The integer value of binary", binary_string, "is:", integer_value)  # Output: 11
+
+
+
+# Convert Binary to Int
+# Define an integer
+number = 11
+
+# Convert the integer to binary
+binary_string = bin(number)
+
+print("The binary representation of", number, "is:", binary_string)  # Output: 0b1011
+
+# To remove the 0b in the front
+res = str(number)[2:] # slice the "str" array from 2 to the rest
+
+```
+Example for usage:
+```
+Given two binary strings a and b, return their sum as a binary string.
+
+Example 1:
+
+Input: a = "11", b = "1"
+Output: "100"
+Example 2:
+
+Input: a = "1010", b = "1011"
+Output: "10101"
+
+
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+
+        int_c = int(str(a), 2) + int(str(b), 2)
+
+        bin_c = bin(int_c)
+
+        res = str(bin_c)[2:]
+
+        return res
+```
