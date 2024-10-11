@@ -148,5 +148,52 @@ orange_count = my_hashmap.pop('orange')  # Removes 'orange' and returns its valu
 
 ______
 
+# To clear sides white space and split strings into arrays
 
+1. Strip trailing whitespaces from the input string using the strip() method.
+2. Split the string into words using the split() method.
+3. If there are no words after stripping whitespaces, return 0.
+4. Otherwise, return the length of the last word, which is the last element in the list of words.
 
+**s.strip():**
+
+The strip() method removes any leading and trailing whitespace characters from the string s. This includes spaces, tabs, and newline characters.
+For example, if s is " Hello World! ", then s.strip() will return "Hello World!".
+**split():**
+
+The split() method splits the string into a list of words based on whitespace by default (spaces, tabs, etc.).
+If the string is "Hello World!", then split() will return ['Hello', 'World!'].
+If there are multiple spaces between words, split() automatically handles them by treating consecutive whitespace as a single delimiter.
+
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal substringconsisting of non-space characters only.
+```
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        words = s.strip().split()
+
+        if not words: #the list is empty, return 0
+            return 0
+
+        print(len(words[-1]))
+```
+Dumb way:
+```
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        
+        left = right = len(s)-1
+        while left >= 0:
+            if s[right] == ' ':
+                right -= 1
+                left = right
+            else:
+                if s[left] != ' ':
+                    left -= 1
+                else:
+                    return right - left
+
+                if left == -1:
+                    return right - left
+```
