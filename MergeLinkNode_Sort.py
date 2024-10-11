@@ -29,6 +29,7 @@ Output: [0]
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
 
+        # To eliminate [],[] and [][1,2,3] and [1,2,3][] cases
         if not list1 and not list2:
             return list1
         elif not list1:
@@ -36,8 +37,10 @@ class Solution:
         elif not list2:
             return list1
 
+        #create a head and a pointer
         current = res = ListNode()
 
+        # To compare both nodes at the same time and push to the next node
         while list1 and list2:
             if list1.val >= list2.val:
                 current.next = list2
@@ -48,12 +51,24 @@ class Solution:
                 current = current.next
                 list1 = list1.next
 
+        # When one list reach null node, just point next to the other list
         if not list1:
             current.next = list2
         elif not list2:
             current.next = list1
 
+        # return the head created
         return res.next
+
+'''
+current = res = ListNode()
+both current and res point to the same new create node
+
+a = b = 1
+a += 2
+print(b)
+b = 2
+'''
 
             
 
