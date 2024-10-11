@@ -200,3 +200,18 @@ class Solution:
                 if left == -1:
                     return right - left
 ```
+
+
+____
+## Splitting an Integer into Digits
+
+```
+#Define an integer
+number = 12345
+
+#Convert the integer to a string and split into digits
+digits = [int(digit) for digit in str(number)]
+
+print("Digits:", digits)  # Output: Digits: [1, 2, 3, 4, 5]
+```
+
