@@ -89,7 +89,7 @@ print("Stack after popping:", list(stack))    # Output: [1, 2]
 
 _____
 
-# To use a Hash to eliminate the duplicates
+## 4. To use a Hash to eliminate the duplicates
 
 In Python, when you use a dictionary (hash = {}), it functions as a hash table where keys are unique. Each key can only appear once in the dictionary. If you try to add a duplicate key, the new value will overwrite the existing one.
 
@@ -148,7 +148,7 @@ orange_count = my_hashmap.pop('orange')  # Removes 'orange' and returns its valu
 
 ______
 
-# To clear sides white space and split strings into arrays
+## 5. To clear sides white space and split strings into arrays
 
 1. Strip trailing whitespaces from the input string using the strip() method.
 2. Split the string into words using the split() method.
@@ -203,7 +203,7 @@ class Solution:
 
 
 ____
-## Splitting an Integer into Digits
+## 6. Splitting an Integer into Digits
 
 ```
 #Define an integer
@@ -237,7 +237,7 @@ class Solution:
 
 ______
 
-## To check a length of an Integer: first covert to string
+## 7. To check a length of an Integer: first covert to string
 
 ```
 # Define an integer
@@ -252,7 +252,7 @@ print("Number of digits:", length)  # Output: Number of digits: 5
 
 _____
 
-## Conversion between Binary AND Integer
+## 8. Conversion between Binary AND Integer
 
 ```
 # Convert Int to Binary
