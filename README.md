@@ -348,3 +348,30 @@ print(arr1)  # Output: [2, 3, 4, 5]
 print(arr2)  # Output: [2, 3, 4]  (not modified)
 
 ```
+
+_____
+
+## To Sort ——> sorted(arr) & arr.sort()
+
+**arr.sort()**
+```
+arr = [3, 1, 4, 2]
+arr.sort(reverse=True)  # Sorts in place in descending order
+print(arr)  # Output: [4, 3, 2, 1]
+
+```
+
+**sorted(arr)**
+```
+arr = [3, 1, 4, 2]
+arr = sorted(arr)  # arr now refers to the new sorted list
+
+print(arr)        # Output: [1, 2, 3, 4]
+
+
+original = [3, 1, 4, 2]
+arr = sorted(original)
+
+print(original)  # Output: [3, 1, 4, 2] (unchanged)
+print(arr)       # Output: [1, 2, 3, 4] (new sorted list)
+```
