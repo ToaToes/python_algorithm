@@ -317,3 +317,34 @@ DP Table: Typically a 2D list (or array) in Python, where:
 
 Rows represent one dimension of the problem.
 Columns represent another dimension of the problem.
+
+
+_____
+## 10. Array in python: assign and copy
+
+To reference the same location: modify any arr will make change on another arr
+```
+arr1 = [1, 2, 3]
+arr2 = [2, 3, 4]
+
+arr1 = arr2  # arr1 now references the same list as arr2
+
+# Modifying arr1
+arr1.append(5)
+
+print(arr1)  # Output: [2, 3, 4, 5]
+print(arr2)  # Output: [2, 3, 4, 5]  (also modified)
+
+```
+
+Not to reference to the same memo location
+```
+arr1 = arr2.copy()  # Creates a shallow copy of arr2
+
+# Modifying arr1
+arr1.append(5)
+
+print(arr1)  # Output: [2, 3, 4, 5]
+print(arr2)  # Output: [2, 3, 4]  (not modified)
+
+```
