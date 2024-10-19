@@ -24,7 +24,7 @@ class Solution:
         fast = fast.next.next # move fast
         slow = slow.next # move slow
         # if there exists circle, fast and slow will meet "equal"
-        if fast == slow and fast and slow: # check if fast meet slow 追上 表明存在循环
+        if fast == slow: # check if fast meet slow 追上 表明存在循环
           return True
 
       return False
