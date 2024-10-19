@@ -349,6 +349,38 @@ print(arr2)  # Output: [2, 3, 4]  (not modified)
 
 ```
 
+**NOTE!!! Also copy() and deepcopy() and a[:]**
+1. ```copy()```
+This method creates a shallow copy of the object. <br/>
+means that it creates a new object, but it inserts references to the original objects contained in the original. <br/>
+If the original object contains nested objects (like lists or dictionaries), the references to those nested objects are copied, not the nested objects themselves. <br/>
+Changes to mutable nested objects in the original will reflect in the shallow copy. <br/>
+```
+import copy
+
+original = [1, 2, [3, 4]]
+shallow_copy = copy.copy(original)
+
+original[2][0] = 'changed'
+print(shallow_copy)  # Output: [1, 2, ['changed', 4]]
+
+```
+2. ```deepcopy()```
+This method creates a deep copy of the object, means that it creates a new object and recursively copies all objects found within the original, <br/>
+meaning that all nested objects are also copied. Changes to any nested objects in the original do not affect the deep copy. <br/>
+```
+import copy
+
+original = [1, 2, [3, 4]]
+deep_copy = copy.deepcopy(original)
+
+original[2][0] = 'changed'
+print(deep_copy)  # Output: [1, 2, [3, 4]]
+
+```
+
+4. ```a[:]``` its the same as ```copy()```
+
 _____
 
 ## To Sort ——> sorted(arr) & arr.sort()
