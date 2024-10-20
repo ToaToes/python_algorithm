@@ -40,11 +40,11 @@ The negative indexing allows you to count from the end of the list, where -1 rep
 
 ______
 
-## 3. How to use STACK and HEAP
+## 3. How to use STACK and HEAP -> Stack(**Last In, First Out**), Heap(min-binary tree, smallest out)
 
 In Python, a stack can be implemented using a list or the collections.deque class, which provides an efficient way to append and pop items from either end. 
 
-**Using a List**
+**STACK: **
 A stack follows the Last In, First Out (LIFO) principle, meaning the last item added is the first one removed. use the append() method to push an item onto the stack and the pop() method to remove the top item.
 ```
 # Creating a stack using a list
@@ -84,6 +84,14 @@ print("Stack after pushing:", list(stack))  # Output: [1, 2, 3]
 top_item = stack.pop()
 print("Popped item:", top_item)              # Output: 3
 print("Stack after popping:", list(stack))    # Output: [1, 2]
+
+```
+
+```
+Example:
+[1,2,3,4,5,6] append into the stack -> in back order -> 6, 5, 4, 3, 2, 1
+When stack.pop(), it will pop from [0] till the end of the array
+
 
 ```
 
