@@ -40,7 +40,7 @@ The negative indexing allows you to count from the end of the list, where -1 rep
 
 ______
 
-## 3. How to use STACK
+## 3. How to use STACK and HEAP
 
 In Python, a stack can be implemented using a list or the collections.deque class, which provides an efficient way to append and pop items from either end. 
 
@@ -86,6 +86,23 @@ print("Popped item:", top_item)              # Output: 3
 print("Stack after popping:", list(stack))    # Output: [1, 2]
 
 ```
+
+**Heap:**
+
+import heapq
+
+heapq.heappush() -> push into the data structure, small will keep in the root, then bigger number
+heapq.heappop() -> pop the root of the tree, re-orgnize the tree and find another smallest for the root
+
+[5, 1, 8, 2, 4, 6, 7] 
+
+       1
+      / \
+     2   6
+    / \ / \
+   5  4 8  7
+
+smallest will be at the root of the binary tree -> min-binary tree
 
 _____
 
