@@ -55,7 +55,7 @@ class Solution:
     
     # to avoid index out of bound
     for pos in range(min(len(first), len(last))):
-      if(first[pos] != last[pos]):
+      if(first[pos] != last[pos]): # when different return immediately, otherwise there migth be later element same to each other, so cant do == compare here
         return ans
       ans += first[pos]
       
