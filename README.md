@@ -408,7 +408,7 @@ print(deep_copy)  # Output: [1, 2, [3, 4]]
 
 _____
 
-## 10. To Sort ——> sorted(arr) & arr.sort()
+## 11. To Sort ——> sorted(arr) & arr.sort()
 
 **arr.sort()**
 ```
