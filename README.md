@@ -408,7 +408,7 @@ print(deep_copy)  # Output: [1, 2, [3, 4]]
 
 _____
 
-## To Sort ——> sorted(arr) & arr.sort()
+## 10. To Sort ——> sorted(arr) & arr.sort()
 
 **arr.sort()**
 ```
@@ -431,4 +431,85 @@ arr = sorted(original)
 
 print(original)  # Output: [3, 1, 4, 2] (unchanged)
 print(arr)       # Output: [1, 2, 3, 4] (new sorted list)
+```
+
+## 11. Helper methods in dealing with **STRING**
+
+```
+text = "hello world"
+upper_text = text.upper()
+print(upper_text)  # Output: "HELLO WORLD"
+
+```
+```
+text = "HELLO WORLD"
+lower_text = text.lower()
+print(lower_text)  # Output: "hello world"
+
+```
+```
+text = "hello world"
+capitalized_text = text.capitalize()
+print(capitalized_text)  # Output: "Hello world"
+
+```
+```
+text = "hello world"
+title_text = text.title()
+print(title_text)  # Output: "Hello World"
+
+```
+```
+text = "Hello World"
+swapped_text = text.swapcase()
+print(swapped_text)  # Output: "hELLO wORLD"
+
+```
+```
+# Sample string
+text = "Hello world, this is a test."
+
+# Splitting the string into a list of words
+words = text.split()
+
+# Output the result
+print(words)  # Output: ['Hello', 'world,', 'this', 'is', 'a', 'test.']
+
+_______
+
+# Using a comma as the delimiter
+text = "apple,banana,cherry"
+fruits = text.split(',')
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
+
+_____
+
+import re
+
+text = "Hello world, this is a test!"
+# Splitting and removing punctuation
+words = re.findall(r'\b\w+\b', text)
+print(words)  # Output: ['Hello', 'world', 'this', 'is', 'a', 'test']
+
+```
+
+```
+# Original string
+text = "Hello world, this is a test."
+
+# Split the string into a list of words
+words = text.split()
+
+# Reconstruct the string from the list of words
+reconstructed = ' '.join(words)
+
+# Output the result
+print(reconstructed)  # Output: "Hello world, this is a test."
+
+_______
+
+# Using a comma as a separator
+reconstructed_with_commas = ', '.join(words)
+print(reconstructed_with_commas)  # Output: "Hello, world,, this, is, a, test."
+
 ```
