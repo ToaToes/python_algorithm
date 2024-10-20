@@ -513,3 +513,18 @@ reconstructed_with_commas = ', '.join(words)
 print(reconstructed_with_commas)  # Output: "Hello, world,, this, is, a, test."
 
 ```
+
+________
+
+## 12. Check if a number is Hexdecimal/others
+
+```
+def is_hexadecimal(strs):
+  try:
+    int(strs, 16)
+    return True
+  except ValueError:
+    return False
+```
+
+________
