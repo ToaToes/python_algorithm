@@ -28,7 +28,7 @@ class Solution:
         ma = max(container, ma) # compare and max = the larger container, to get largest
 
         # iterate short side ahead/back to find bigger side
-        if left < right:
+        if height[left] < height[right]:
           left += 1
         else:
           right -= 1
