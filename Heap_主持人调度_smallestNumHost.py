@@ -32,7 +32,7 @@ class Solution:
 
       for i in sort_startEnd:
         if host and i[0] >= host[0]: # i[0]: iterate the start time on sorted startEnd arr, host[0]: earliest end time to compare with start time i[0]
-          heapq.heappop() # find host that ends early and do the next work
-        heapq.heappush(i[1]) # push into the End time base on the min-binary tree
+          heapq.heappop(host) # find host that ends early and do the next work
+        heapq.heappush(host, i[1]) # push into the End time base on the min-binary tree
 
       return len(host)
