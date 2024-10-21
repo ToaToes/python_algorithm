@@ -433,6 +433,17 @@ print(original)  # Output: [3, 1, 4, 2] (unchanged)
 print(arr)       # Output: [1, 2, 3, 4] (new sorted list)
 ```
 
+2D array sorted base on certain element ->
+```
+list = sorted(array, key = lambda x: x[1]) # sort base on second element in 2d
+
+# class Interval:
+#     def __init__(self, a=0, b=0):
+#         self.start = a
+#         self.end = b
+
+list = sorted(interval, key = lambda x: x.start) # sort base on x.start item
+```
 ## 11. Helper methods in dealing with **STRING**
 
 ```
