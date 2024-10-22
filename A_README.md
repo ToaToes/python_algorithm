@@ -453,6 +453,16 @@ list = sorted(array, key = lambda x: x[1]) # sort base on second element in 2d
 
 list = sorted(interval, key = lambda x: x.start) # sort base on x.start item
 ```
+
+**Sort a list of tuples (or other iterable items) based on multiple criteria. **
+
+```
+sorted(array, key = lambda x: (-x[0], x[1])) -> 倒叙第一位排序， 如果相同就正序排第二位
+sorted(array, key = lambda x: (x[0], x[1])) -> 正序第一位排序， 如果相同就正序排第二位
+
+```
+will first be based on the first element of the tuple (or list), and if there are ties (i.e., multiple elements have the same first element), it will then sort by the second element.
+
 ## 11. Helper methods in dealing with **STRING**
 
 ```
