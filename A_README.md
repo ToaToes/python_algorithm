@@ -539,3 +539,24 @@ def is_hexadecimal(strs):
 ```
 
 ________
+
+## 13. Floor and Ceiling of a number
+
+In Python, you can use the math module to apply the floor function, which rounds down a number to the nearest integer. Here's how to do it:
+
+use math.floor()
+```
+import math
+
+number = 3.7
+floored_value = math.floor(number)
+print(floored_value)  # Output: 3
+
+```
+use int()
+```
+number = 3.7
+floored_value = int(number)
+print(floored_value)  # Output: 3
+
+```
