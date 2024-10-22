@@ -553,6 +553,9 @@ floored_value = math.floor(number)
 print(floored_value)  # Output: 3
 
 ```
+OR use ```n//2```
+
+
 use int()
 ```
 number = 3.7
