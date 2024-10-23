@@ -416,6 +416,71 @@ arr[::2] -> 0, 2, 4, 6: from 0 step 2
 arr[1::2] -> 1, 3, 5: from 1 step 2
 ```
 
+**To remove one element in array**
+```
+# Initialize a list
+my_list = [1, 2, 3, 2, 4]
+
+# Remove the first occurrence of 2
+my_list.remove(2)
+
+print(my_list)  # Output: [1, 3, 2, 4]
+
+```
+** To add one element in array
+```
+# Initialize an empty list
+my_list = []
+
+# Append elements to the list
+my_list.append(1)
+my_list.append(2)
+my_list.append(3)
+
+print(my_list)  # Output: [1, 2, 3]
+
+```
+
+** TO Adds all elements from an iterable (like another list) to the end of the list.**
+```
+my_list = [1, 2, 3]
+my_list.extend([4, 5])
+print(my_list)  # Output: [1, 2, 3, 4, 5]
+
+```
+
+**To insert an element at specific index**
+```
+my_list = [1, 2, 3]
+my_list.insert(1, 4)  # Insert 4 at index 1
+print(my_list)  # Output: [1, 4, 2, 3]
+
+```
+
+**To remove and also return the element at specific index**
+```
+my_list = [1, 2, 3]
+popped_element = my_list.pop()
+print(popped_element)  # Output: 3
+print(my_list)         # Output: [1, 2]
+
+```
+
+**TO get the number of specific element from one array**
+```
+my_list = [1, 2, 3, 2]
+count_of_two = my_list.count(2)
+print(count_of_two)  # Output: 2
+
+```
+
+**Remove all elements from the List**
+```
+my_list = [1, 2, 3]
+my_list.clear()
+print(my_list)  # Output: []
+```
+
 _____
 
 ## 11. To Sort ——> sorted(arr) & arr.sort()
