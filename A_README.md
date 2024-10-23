@@ -427,7 +427,7 @@ my_list.remove(2)
 print(my_list)  # Output: [1, 3, 2, 4]
 
 ```
-** To add one element in array
+**To add one element in array**
 ```
 # Initialize an empty list
 my_list = []
@@ -441,7 +441,7 @@ print(my_list)  # Output: [1, 2, 3]
 
 ```
 
-** TO Adds all elements from an iterable (like another list) to the end of the list.**
+**TO Adds all elements from an iterable (like another list) to the end of the list.**
 ```
 my_list = [1, 2, 3]
 my_list.extend([4, 5])
