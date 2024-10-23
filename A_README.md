@@ -85,15 +85,16 @@ top_item = stack.pop()
 print("Popped item:", top_item)              # Output: 3
 print("Stack after popping:", list(stack))    # Output: [1, 2]
 
-```
+# Insert an element at a specific index (e.g., index 1)
+stack.insert(1, 4)
+print("Stack after insert:", stack)  # Output: [1, 4, 2]
+
+# Delete an element by its index (e.g., index 0)
+del stack[0]
+print("Stack after delete:", stack)  # Output: [4, 2]
 
 ```
-Example:
-[1,2,3,4,5,6] append into the stack -> in back order -> 6, 5, 4, 3, 2, 1
-When stack.pop(), it will pop from [0] till the end of the array
 
-
-```
 
 **Heap:**
 
